@@ -4,11 +4,14 @@ import { Menu, X, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/components/ThemeProvider';
 import { Toggle } from '@/components/ui/toggle';
+import LanguageSelector from './LanguageSelector';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,9 +26,9 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' },
+    { name: t('navbar.projects'), href: '#projects' },
+    { name: t('navbar.skills'), href: '#skills' },
+    { name: t('navbar.contact'), href: '#contact' },
   ];
 
   return (
@@ -58,6 +61,8 @@ const Navbar = () => {
             </a>
           ))}
           
+          <LanguageSelector />
+          
           <Toggle 
             pressed={theme === 'dark'}
             onPressedChange={toggleTheme}
@@ -74,18 +79,20 @@ const Navbar = () => {
             style={{ animationDelay: '0.6s' }}
           >
             <Button className="bg-gradient-to-r from-purple-default to-indigo-default hover:opacity-90 text-white transition-all duration-300 shadow-lg hover:shadow-accent/30">
-              Get In Touch
+              {t('navbar.getInTouch')}
             </Button>
           </a>
         </nav>
         
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
+          <LanguageSelector />
+          
           <Toggle 
             pressed={theme === 'dark'}
             onPressedChange={toggleTheme}
             aria-label="Toggle dark mode"
-            className="mr-4"
+            className="mx-4"
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </Toggle>
@@ -121,7 +128,7 @@ const Navbar = () => {
                   className="bg-gradient-to-r from-purple-default to-indigo-default hover:opacity-90 text-white w-full transition-all duration-300 shadow-lg" 
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Get In Touch
+                  {t('navbar.getInTouch')}
                 </Button>
               </div>
             </nav>

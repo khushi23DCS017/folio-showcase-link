@@ -1,7 +1,9 @@
 
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   
   return (
@@ -10,9 +12,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0 animate-fade-in" style={{ animationDelay: '0.1s' }}>
             <p className="text-lightSlate flex items-center">
-              &copy; {currentYear} John Doe. Made with 
+              &copy; {currentYear} John Doe. {t('footer.madeWith')} 
               <Heart size={16} className="mx-1 text-accent animate-pulse" /> 
-              All rights reserved.
+              {t('footer.rights')}
             </p>
           </div>
           

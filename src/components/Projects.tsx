@@ -1,27 +1,30 @@
 
 import ProjectCard from './ProjectCard';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const { t } = useTranslation();
+  
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A fully responsive e-commerce platform with product catalog, shopping cart, user authentication, and payment processing integration.",
+      title: t('projects.ecommerce.title'),
+      description: t('projects.ecommerce.description'),
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       demoLink: "https://example.com/demo",
       githubLink: "https://github.com/username/project",
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"]
     },
     {
-      title: "Task Management App",
-      description: "A Kanban-style task management application with drag-and-drop functionality, task categories, and real-time updates.",
+      title: t('projects.taskApp.title'),
+      description: t('projects.taskApp.description'),
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       demoLink: "https://example.com/demo",
       githubLink: "https://github.com/username/project",
       technologies: ["React", "TypeScript", "Firebase", "Framer Motion"]
     },
     {
-      title: "Social Media Dashboard",
-      description: "A comprehensive dashboard for social media analytics with interactive charts, metrics tracking, and report generation.",
+      title: t('projects.dashboard.title'),
+      description: t('projects.dashboard.description'),
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       demoLink: "https://example.com/demo",
       githubLink: "https://github.com/username/project",
@@ -32,7 +35,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <h2 className="section-heading">Projects</h2>
+        <h2 className="section-heading">{t('projects.title')}</h2>
         <div className="flex flex-col space-y-16">
           {projects.map((project, index) => (
             <ProjectCard 

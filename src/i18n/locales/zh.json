@@ -1,0 +1,75 @@
+
+{
+  "navbar": {
+    "projects": "项目",
+    "skills": "技能",
+    "contact": "联系方式",
+    "getInTouch": "联系我"
+  },
+  "hero": {
+    "greeting": "你好，我是",
+    "name": "约翰·多伊",
+    "tagline": "我为网络构建产品。",
+    "description": "我是一名软件开发人员，专门打造卓越的数字体验。目前，我专注于创建无障碍、以人为本的产品。",
+    "viewWork": "查看我的作品",
+    "getInTouch": "联系我"
+  },
+  "projects": {
+    "title": "项目",
+    "ecommerce": {
+      "title": "电子商务平台",
+      "description": "一个完全响应式的电子商务平台，具有产品目录、购物车、用户认证和支付处理集成。"
+    },
+    "taskApp": {
+      "title": "任务管理应用",
+      "description": "一个看板风格的任务管理应用，具有拖放功能、任务分类和实时更新。"
+    },
+    "dashboard": {
+      "title": "社交媒体仪表板",
+      "description": "一个综合性的社交媒体分析仪表板，具有交互式图表、指标跟踪和报告生成功能。"
+    }
+  },
+  "skills": {
+    "title": "技能",
+    "frontend": {
+      "title": "前端开发",
+      "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux"]
+    },
+    "backend": {
+      "title": "后端开发",
+      "skills": ["Node.js", "Express", "Django", "Ruby on Rails", "GraphQL"]
+    },
+    "database": {
+      "title": "数据库",
+      "skills": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"]
+    },
+    "languages": {
+      "title": "编程语言",
+      "skills": ["JavaScript", "TypeScript", "Python", "Java", "C++"]
+    },
+    "design": {
+      "title": "设计工具",
+      "skills": ["Figma", "Adobe XD", "Sketch", "Photoshop", "Illustrator"]
+    },
+    "devops": {
+      "title": "DevOps 和工具",
+      "skills": ["Git", "Docker", "AWS", "CI/CD", "Jest"]
+    }
+  },
+  "contact": {
+    "title": "联系方式",
+    "getInTouch": "联系我",
+    "description": "我目前正在寻找新的机会。无论您有问题或只是想打个招呼，我的收件箱随时为您开放！",
+    "namePlaceholder": "您的姓名",
+    "emailPlaceholder": "您的邮箱",
+    "messagePlaceholder": "您的留言",
+    "send": "发送信息"
+  },
+  "footer": {
+    "rights": "版权所有。",
+    "madeWith": "用爱制作"
+  },
+  "languageSelector": {
+    "language": "语言"
+  }
+}

@@ -1,0 +1,75 @@
+
+{
+  "navbar": {
+    "projects": "परियोजनाएँ",
+    "skills": "कौशल",
+    "contact": "संपर्क",
+    "getInTouch": "संपर्क करें"
+  },
+  "hero": {
+    "greeting": "नमस्ते, मेरा नाम है",
+    "name": "जॉन डो",
+    "tagline": "मैं वेब के लिए चीजें बनाता हूं।",
+    "description": "मैं एक सॉफ्टवेयर डेवलपर हूं जो असाधारण डिजिटल अनुभव बनाने में विशेषज्ञ है। वर्तमान में, मैं सुलभ, मानव-केंद्रित उत्पादों के निर्माण पर केंद्रित हूं।",
+    "viewWork": "मेरा काम देखें",
+    "getInTouch": "संपर्क करें"
+  },
+  "projects": {
+    "title": "परियोजनाएँ",
+    "ecommerce": {
+      "title": "ई-कॉमर्स प्लेटफॉर्म",
+      "description": "उत्पाद कैटलॉग, शॉपिंग कार्ट, उपयोगकर्ता प्रमाणीकरण और भुगतान प्रसंस्करण एकीकरण के साथ एक पूरी तरह से प्रतिक्रियाशील ई-कॉमर्स प्लेटफॉर्म।"
+    },
+    "taskApp": {
+      "title": "कार्य प्रबंधन ऐप",
+      "description": "कार्य श्रेणियों और रीयल-टाइम अपडेट के साथ कैनबन-शैली वाला कार्य प्रबंधन एप्लिकेशन।"
+    },
+    "dashboard": {
+      "title": "सोशल मीडिया डैशबोर्ड",
+      "description": "इंटरैक्टिव चार्ट, मेट्रिक्स ट्रैकिंग और रिपोर्ट जनरेशन के साथ सोशल मीडिया एनालिटिक्स के लिए एक व्यापक डैशबोर्ड।"
+    }
+  },
+  "skills": {
+    "title": "कौशल",
+    "frontend": {
+      "title": "फ्रंटएंड डेवलपमेंट",
+      "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux"]
+    },
+    "backend": {
+      "title": "बैकएंड डेवलपमेंट",
+      "skills": ["Node.js", "Express", "Django", "Ruby on Rails", "GraphQL"]
+    },
+    "database": {
+      "title": "डेटाबेस",
+      "skills": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"]
+    },
+    "languages": {
+      "title": "प्रोग्रामिंग भाषाएँ",
+      "skills": ["JavaScript", "TypeScript", "Python", "Java", "C++"]
+    },
+    "design": {
+      "title": "डिज़ाइन टूल्स",
+      "skills": ["Figma", "Adobe XD", "Sketch", "Photoshop", "Illustrator"]
+    },
+    "devops": {
+      "title": "डेवऑप्स और टूल्स",
+      "skills": ["Git", "Docker", "AWS", "CI/CD", "Jest"]
+    }
+  },
+  "contact": {
+    "title": "संपर्क",
+    "getInTouch": "संपर्क करें",
+    "description": "मैं वर्तमान में नए अवसरों की तलाश कर रहा हूं। चाहे आपके पास कोई सवाल हो या बस हाय कहना चाहते हों, मेरा इनबॉक्स हमेशा खुला है!",
+    "namePlaceholder": "आपका नाम",
+    "emailPlaceholder": "आपका ईमेल",
+    "messagePlaceholder": "आपका संदेश",
+    "send": "संदेश भेजें"
+  },
+  "footer": {
+    "rights": "सर्वाधिकार सुरक्षित।",
+    "madeWith": "बनाया गया"
+  },
+  "languageSelector": {
+    "language": "भाषा"
+  }
+}

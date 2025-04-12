@@ -4,6 +4,7 @@ import {
   Code, Database, Globe, Layout, Palette, Server, 
   Terminal, Layers, FileCode, Cpu
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface SkillCategoryProps {
   title: string;
@@ -33,35 +34,37 @@ const SkillCategory = ({ title, skills, icon, index }: SkillCategoryProps) => {
 };
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   const skillCategories = [
     {
-      title: "Frontend Development",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux"],
+      title: t('skills.frontend.title'),
+      skills: t('skills.frontend.skills', { returnObjects: true }) as string[],
       icon: <Layout size={28} />
     },
     {
-      title: "Backend Development",
-      skills: ["Node.js", "Express", "Django", "Ruby on Rails", "GraphQL"],
+      title: t('skills.backend.title'),
+      skills: t('skills.backend.skills', { returnObjects: true }) as string[],
       icon: <Server size={28} />
     },
     {
-      title: "Database",
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"],
+      title: t('skills.database.title'),
+      skills: t('skills.database.skills', { returnObjects: true }) as string[],
       icon: <Database size={28} />
     },
     {
-      title: "Programming Languages",
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "C++"],
+      title: t('skills.languages.title'),
+      skills: t('skills.languages.skills', { returnObjects: true }) as string[],
       icon: <Code size={28} />
     },
     {
-      title: "Design Tools",
-      skills: ["Figma", "Adobe XD", "Sketch", "Photoshop", "Illustrator"],
+      title: t('skills.design.title'),
+      skills: t('skills.design.skills', { returnObjects: true }) as string[],
       icon: <Palette size={28} />
     },
     {
-      title: "DevOps & Tools",
-      skills: ["Git", "Docker", "AWS", "CI/CD", "Jest"],
+      title: t('skills.devops.title'),
+      skills: t('skills.devops.skills', { returnObjects: true }) as string[],
       icon: <Terminal size={28} />
     },
   ];
@@ -69,7 +72,7 @@ const Skills = () => {
   return (
     <section id="skills" className="py-24">
       <div className="container mx-auto px-4">
-        <h2 className="section-heading">Skills</h2>
+        <h2 className="section-heading">{t('skills.title')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <SkillCategory

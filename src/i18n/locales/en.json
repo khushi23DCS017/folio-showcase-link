@@ -1,0 +1,75 @@
+
+{
+  "navbar": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "getInTouch": "Get In Touch"
+  },
+  "hero": {
+    "greeting": "Hi, my name is",
+    "name": "John Doe",
+    "tagline": "I build things for the web.",
+    "description": "I'm a software developer specializing in building exceptional digital experiences. Currently, I'm focused on creating accessible, human-centered products.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get in Touch"
+  },
+  "projects": {
+    "title": "Projects",
+    "ecommerce": {
+      "title": "E-Commerce Platform",
+      "description": "A fully responsive e-commerce platform with product catalog, shopping cart, user authentication, and payment processing integration."
+    },
+    "taskApp": {
+      "title": "Task Management App",
+      "description": "A Kanban-style task management application with drag-and-drop functionality, task categories, and real-time updates."
+    },
+    "dashboard": {
+      "title": "Social Media Dashboard",
+      "description": "A comprehensive dashboard for social media analytics with interactive charts, metrics tracking, and report generation."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": {
+      "title": "Frontend Development",
+      "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux"]
+    },
+    "backend": {
+      "title": "Backend Development",
+      "skills": ["Node.js", "Express", "Django", "Ruby on Rails", "GraphQL"]
+    },
+    "database": {
+      "title": "Database",
+      "skills": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"]
+    },
+    "languages": {
+      "title": "Programming Languages",
+      "skills": ["JavaScript", "TypeScript", "Python", "Java", "C++"]
+    },
+    "design": {
+      "title": "Design Tools",
+      "skills": ["Figma", "Adobe XD", "Sketch", "Photoshop", "Illustrator"]
+    },
+    "devops": {
+      "title": "DevOps & Tools",
+      "skills": ["Git", "Docker", "AWS", "CI/CD", "Jest"]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "getInTouch": "Get In Touch",
+    "description": "I'm currently looking for new opportunities. My inbox is always open whether you have a question or just want to say hi!",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "messagePlaceholder": "Your Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "madeWith": "Made with"
+  },
+  "languageSelector": {
+    "language": "Language"
+  }
+}

@@ -1,8 +1,11 @@
 
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="min-h-screen flex flex-col justify-center pt-16 pb-32">
       <div className="container mx-auto px-4">
@@ -11,27 +14,26 @@ const Hero = () => {
             className="text-accent font-mono mb-5 animate-fade-in" 
             style={{ animationDelay: '0.2s' }}
           >
-            Hi, my name is
+            {t('hero.greeting')}
           </p>
           <h1 
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-navy dark:text-white animate-fade-in text-gradient"
             style={{ animationDelay: '0.3s' }}
           >
-            John Doe
+            {t('hero.name')}
           </h1>
           <h2 
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-slate dark:text-lightSlate animate-fade-in"
             style={{ animationDelay: '0.4s' }}
           >
-            I build things for the web.
+            {t('hero.tagline')}
           </h2>
           
           <p 
             className="text-lg text-slate dark:text-lightSlate mb-8 max-w-2xl animate-fade-in"
             style={{ animationDelay: '0.5s' }}
           >
-            I'm a software developer specializing in building exceptional digital experiences. 
-            Currently, I'm focused on creating accessible, human-centered products.
+            {t('hero.description')}
           </p>
           
           <div 
@@ -40,7 +42,7 @@ const Hero = () => {
           >
             <Button asChild className="bg-gradient-to-r from-purple-default to-indigo-default hover:opacity-90 text-white shadow-lg hover:shadow-accent/30 transition-all duration-300 group">
               <a href="#projects">
-                View My Work
+                {t('hero.viewWork')}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
@@ -51,7 +53,7 @@ const Hero = () => {
               className="border-navy text-navy dark:border-lightSlate dark:text-lightSlate hover:bg-accent/10 dark:hover:bg-accent/10 transition-all duration-300"
             >
               <a href="#contact">
-                Get in Touch
+                {t('hero.getInTouch')}
               </a>
             </Button>
           </div>
