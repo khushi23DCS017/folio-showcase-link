@@ -30,24 +30,29 @@ const Navbar = () => {
 
   return (
     <header 
-      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+      className={`fixed w-full top-0 z-50 transition-all duration-500 ${
         scrolled 
-          ? 'bg-white/90 dark:bg-navy/90 backdrop-blur-md shadow-sm' 
+          ? 'bg-white/90 dark:bg-navy/90 backdrop-blur-md shadow-md' 
           : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold text-navy dark:text-white flex items-center">
-          <span className="bg-gradient-to-r from-navy to-aqua dark:from-aqua dark:to-lightSlate bg-clip-text text-transparent">Portfolio</span>
+        <a 
+          href="#" 
+          className="text-2xl font-bold flex items-center animate-fade-in transition-transform duration-300 hover:scale-105"
+          style={{ animationDelay: '0.1s' }}
+        >
+          <span className="bg-gradient-to-r from-purple-default to-indigo-default bg-clip-text text-transparent">Portfolio</span>
         </a>
         
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-6">
-          {navLinks.map((link) => (
+          {navLinks.map((link, index) => (
             <a 
               key={link.name}
               href={link.href}
-              className="text-navy dark:text-lightSlate hover:text-aqua dark:hover:text-aqua transition-colors duration-300"
+              className="text-navy dark:text-lightSlate hover:text-accent dark:hover:text-accent transition-colors duration-300 animate-fade-in"
+              style={{ animationDelay: `${0.2 + index * 0.1}s` }}
             >
               {link.name}
             </a>
@@ -57,13 +62,18 @@ const Navbar = () => {
             pressed={theme === 'dark'}
             onPressedChange={toggleTheme}
             aria-label="Toggle dark mode"
-            className="mr-2"
+            className="mr-2 animate-fade-in transition-transform hover:rotate-12 duration-300"
+            style={{ animationDelay: '0.5s' }}
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </Toggle>
           
-          <a href="#contact">
-            <Button className="bg-navy hover:bg-lightNavy dark:bg-aqua dark:text-navy dark:hover:bg-aqua/90 text-white transition-all duration-300 hover-glow">
+          <a 
+            href="#contact"
+            className="animate-fade-in"
+            style={{ animationDelay: '0.6s' }}
+          >
+            <Button className="bg-gradient-to-r from-purple-default to-indigo-default hover:opacity-90 text-white transition-all duration-300 shadow-lg hover:shadow-accent/30">
               Get In Touch
             </Button>
           </a>
@@ -81,7 +91,7 @@ const Navbar = () => {
           </Toggle>
           
           <button 
-            className="text-navy dark:text-white"
+            className="text-navy dark:text-white transition-transform duration-300 hover:scale-110"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -92,22 +102,23 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-navy shadow-lg">
+        <div className="md:hidden bg-white/95 dark:bg-navy/95 backdrop-blur-md shadow-lg overflow-hidden transition-all duration-300">
           <div className="container mx-auto py-4">
             <nav className="flex flex-col space-y-4">
-              {navLinks.map((link) => (
+              {navLinks.map((link, index) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-navy dark:text-lightSlate hover:text-aqua dark:hover:text-aqua transition-colors px-4 py-2"
+                  className="text-navy dark:text-lightSlate hover:text-accent dark:hover:text-accent transition-colors px-4 py-2 animate-slide-in"
+                  style={{ animationDelay: `${0.1 + index * 0.1}s` }}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}
                 </a>
               ))}
-              <div className="px-4 pt-2">
+              <div className="px-4 pt-2 animate-slide-in" style={{ animationDelay: '0.4s' }}>
                 <Button 
-                  className="bg-navy hover:bg-lightNavy dark:bg-aqua dark:text-navy dark:hover:bg-aqua/90 text-white w-full transition-all duration-300 hover-glow" 
+                  className="bg-gradient-to-r from-purple-default to-indigo-default hover:opacity-90 text-white w-full transition-all duration-300 shadow-lg" 
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Get In Touch

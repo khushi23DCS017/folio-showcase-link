@@ -1,42 +1,46 @@
 
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="py-8 bg-navy dark:bg-lightNavy/80 text-white transition-colors duration-300">
+    <footer className="py-8 bg-gradient-to-r from-navy to-lightNavy dark:from-lightNavy/80 dark:to-navy text-white transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <p className="text-lightSlate">&copy; {currentYear} John Doe. All rights reserved.</p>
+          <div className="mb-4 md:mb-0 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            <p className="text-lightSlate flex items-center">
+              &copy; {currentYear} John Doe. Made with 
+              <Heart size={16} className="mx-1 text-accent animate-pulse" /> 
+              All rights reserved.
+            </p>
           </div>
           
-          <div className="flex space-x-6">
+          <div className="flex space-x-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <a 
               href="https://github.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-lightSlate hover:text-aqua transition-colors transform hover:scale-110 duration-300"
+              className="text-lightSlate hover:text-accent transition-colors transform hover:scale-125 duration-300"
               aria-label="GitHub"
             >
-              <Github size={20} />
+              <Github size={20} className="hover:animate-spin-slow" />
             </a>
             <a 
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-lightSlate hover:text-aqua transition-colors transform hover:scale-110 duration-300"
+              className="text-lightSlate hover:text-accent transition-colors transform hover:scale-125 duration-300"
               aria-label="LinkedIn"
             >
-              <Linkedin size={20} />
+              <Linkedin size={20} className="hover:animate-spin-slow" />
             </a>
             <a 
               href="mailto:johndoe@example.com" 
-              className="text-lightSlate hover:text-aqua transition-colors transform hover:scale-110 duration-300"
+              className="text-lightSlate hover:text-accent transition-colors transform hover:scale-125 duration-300"
               aria-label="Email"
             >
-              <Mail size={20} />
+              <Mail size={20} className="hover:animate-spin-slow" />
             </a>
           </div>
         </div>
