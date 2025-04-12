@@ -28,6 +28,8 @@ const Navbar = () => {
   const navLinks = [
     { name: t('navbar.projects'), href: '#projects' },
     { name: t('navbar.skills'), href: '#skills' },
+    { name: t('navbar.education'), href: '#education' },
+    { name: t('navbar.certifications'), href: '#certifications' },
     { name: t('navbar.contact'), href: '#contact' },
   ];
 
@@ -45,7 +47,7 @@ const Navbar = () => {
           className="text-2xl font-bold flex items-center animate-fade-in transition-transform duration-300 hover:scale-105"
           style={{ animationDelay: '0.1s' }}
         >
-          <span className="bg-gradient-to-r from-purple-default to-indigo-default bg-clip-text text-transparent">Portfolio</span>
+          <span className="bg-gradient-to-r from-purple-default to-indigo-default bg-clip-text text-transparent">Khushi</span>
         </a>
         
         {/* Desktop Nav */}

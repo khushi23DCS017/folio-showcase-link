@@ -7,28 +7,22 @@ const Projects = () => {
   
   const projects = [
     {
-      title: t('projects.ecommerce.title'),
-      description: t('projects.ecommerce.description'),
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      title: t('projects.eduRadar.title'),
+      description: t('projects.eduRadar.description'),
+      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      githubLink: "https://github.com",
       demoLink: "https://example.com/demo",
-      githubLink: "https://github.com/username/project",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"]
+      technologies: ["React", "Node.js", "Firebase", "GPS", "Real-time Chat"],
+      techStack: t('projects.eduRadar.techStack')
     },
     {
-      title: t('projects.taskApp.title'),
-      description: t('projects.taskApp.description'),
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      title: t('projects.inclusivePay.title'),
+      description: t('projects.inclusivePay.description'),
+      image: "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      githubLink: "https://github.com",
       demoLink: "https://example.com/demo",
-      githubLink: "https://github.com/username/project",
-      technologies: ["React", "TypeScript", "Firebase", "Framer Motion"]
-    },
-    {
-      title: t('projects.dashboard.title'),
-      description: t('projects.dashboard.description'),
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      demoLink: "https://example.com/demo",
-      githubLink: "https://github.com/username/project",
-      technologies: ["Vue.js", "Vuex", "D3.js", "Express", "PostgreSQL"]
+      technologies: ["HTML", "CSS", "JavaScript", "React", "AI"],
+      techStack: t('projects.inclusivePay.techStack')
     }
   ];
   
@@ -46,6 +40,7 @@ const Projects = () => {
               demoLink={project.demoLink}
               githubLink={project.githubLink}
               technologies={project.technologies}
+              techStack={project.techStack}
               index={index}
             />
           ))}

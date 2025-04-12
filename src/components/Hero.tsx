@@ -22,6 +22,12 @@ const Hero = () => {
           >
             {t('hero.name')}
           </h1>
+          <div className="text-lg text-slate mb-4 animate-fade-in"
+            style={{ animationDelay: '0.35s' }}>
+            <span className="font-semibold">{t('hero.semester')}</span>
+            <span className="mx-2">|</span>
+            <span>{t('hero.location')}</span>
+          </div>
           <h2 
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-slate dark:text-lightSlate animate-fade-in"
             style={{ animationDelay: '0.4s' }}
@@ -63,7 +69,7 @@ const Hero = () => {
             style={{ animationDelay: '0.8s' }}
           >
             <a 
-              href="https://github.com" 
+              href="https://github.com/khushi23DCS017" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-slate hover:text-accent dark:text-lightSlate dark:hover:text-accent transition-colors transform hover:scale-125 duration-300"
@@ -72,7 +78,7 @@ const Hero = () => {
               <Github size={24} className="animate-bounce-subtle" style={{ animationDelay: '0.2s' }} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/khushi-dadhaniya" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-slate hover:text-accent dark:text-lightSlate dark:hover:text-accent transition-colors transform hover:scale-125 duration-300"
@@ -81,7 +87,7 @@ const Hero = () => {
               <Linkedin size={24} className="animate-bounce-subtle" style={{ animationDelay: '0.4s' }} />
             </a>
             <a 
-              href="mailto:johndoe@example.com" 
+              href="mailto:khushidadhaniya8@gmail.com" 
               className="text-slate hover:text-accent dark:text-lightSlate dark:hover:text-accent transition-colors transform hover:scale-125 duration-300"
               aria-label="Email"
             >

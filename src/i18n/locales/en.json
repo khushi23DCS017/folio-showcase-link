@@ -4,57 +4,82 @@
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact",
-    "getInTouch": "Get In Touch"
+    "getInTouch": "Get In Touch",
+    "education": "Education",
+    "certifications": "Certifications"
   },
   "hero": {
     "greeting": "Hi, my name is",
-    "name": "John Doe",
-    "tagline": "I build things for the web.",
-    "description": "I'm a software developer specializing in building exceptional digital experiences. Currently, I'm focused on creating accessible, human-centered products.",
+    "name": "Khushi Dadhaniya",
+    "tagline": "Computer Science Engineer",
+    "description": "Aspiring Computer Science Engineer with a strong foundation in programming and problem-solving. Seeking opportunities to apply my skills in web development, data analysis, Machine Learning and gain hands-on experience through internships or projects.",
     "viewWork": "View My Work",
-    "getInTouch": "Get in Touch"
+    "getInTouch": "Get in Touch",
+    "location": "Surat, Gujarat",
+    "semester": "CSE, 4th Semester"
   },
   "projects": {
     "title": "Projects",
-    "ecommerce": {
-      "title": "E-Commerce Platform",
-      "description": "A fully responsive e-commerce platform with product catalog, shopping cart, user authentication, and payment processing integration."
+    "eduRadar": {
+      "title": "EduRadar — Tutor Finder Platform",
+      "description": "An EdTech project that connects students with nearby tutors using GPS-based search, advanced filters, and in-app messaging. Key Features: Location-based search, student/tutor profiles, secure authentication, real-time chat, and tutor reviews.",
+      "techStack": "React | Node.js | Firebase"
     },
-    "taskApp": {
-      "title": "Task Management App",
-      "description": "A Kanban-style task management application with drag-and-drop functionality, task categories, and real-time updates."
-    },
-    "dashboard": {
-      "title": "Social Media Dashboard",
-      "description": "A comprehensive dashboard for social media analytics with interactive charts, metrics tracking, and report generation."
+    "inclusivePay": {
+      "title": "InclusivePay — Financial Inclusion Platform",
+      "description": "A fintech platform designed to support underbanked communities by offering budgeting tools, secure digital payments, and financial literacy programs. It includes personalized financial advice powered by AI and gamified learning to improve money management. The platform ensures accessibility with low-cost transactions and multilingual support.",
+      "techStack": "HTML | CSS | JavaScript | React"
     }
   },
   "skills": {
     "title": "Skills",
-    "frontend": {
-      "title": "Frontend Development",
-      "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux"]
-    },
-    "backend": {
-      "title": "Backend Development",
-      "skills": ["Node.js", "Express", "Django", "Ruby on Rails", "GraphQL"]
-    },
-    "database": {
-      "title": "Database",
-      "skills": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"]
-    },
-    "languages": {
+    "programming": {
       "title": "Programming Languages",
-      "skills": ["JavaScript", "TypeScript", "Python", "Java", "C++"]
+      "skills": ["Python", "C++", "Java", "C", "JavaScript", "React", "Node.js", "Firebase"]
     },
-    "design": {
-      "title": "Design Tools",
-      "skills": ["Figma", "Adobe XD", "Sketch", "Photoshop", "Illustrator"]
+    "tools": {
+      "title": "Tools & Technologies",
+      "skills": ["Visual Studio", "SQL", "MS Excel"]
     },
-    "devops": {
-      "title": "DevOps & Tools",
-      "skills": ["Git", "Docker", "AWS", "CI/CD", "Jest"]
+    "webDev": {
+      "title": "Web Development",
+      "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js"]
+    },
+    "softwareDev": {
+      "title": "Software Development",
+      "skills": ["Object-Oriented Programming"]
+    },
+    "softSkills": {
+      "title": "Soft Skills",
+      "skills": ["Leadership", "Problem-solving", "Management", "Communication", "Teamwork"]
     }
+  },
+  "education": {
+    "title": "Education",
+    "university": "CHARUSAT University",
+    "degree": "Computer Science and Engineering",
+    "period": "July 2023 - May 2027",
+    "gpa": "Current CGPA: 9.20",
+    "courses": "Relevant Courses: DSA, Computer Networks, DBMS, Operating Systems, Design and Analysis of Algorithms",
+    "school": {
+      "name": "Ashadeep Group of Schools",
+      "period": "Jun 2019 - April 2023",
+      "achievements": "std 10: 98.91 percentile | std 12: 87.79 science percentile"
+    }
+  },
+  "certifications": {
+    "title": "Certifications and Achievements",
+    "items": [
+      "Programming in Java, Nptel Online Certification — 2024",
+      "odoo hackathon (M.S University)(Top 50-teams)— [March,2025]",
+      "Fundamentals of Red Hat Enterprise Linux 9",
+      "Data Visualisation: Empowering Business with Effective Insights TATA certified",
+      "Basics of Python certified by Infosys"
+    ]
+  },
+  "extracurricular": {
+    "title": "Extracurricular Activities",
+    "role": "Institute Level Student Counsellor (ILSC) - Present"
   },
   "contact": {
     "title": "Contact",
@@ -63,7 +88,9 @@
     "namePlaceholder": "Your Name",
     "emailPlaceholder": "Your Email",
     "messagePlaceholder": "Your Message",
-    "send": "Send Message"
+    "send": "Send Message",
+    "email": "khushidadhaniya8@gmail.com",
+    "phone": "0786 100 83 97"
   },
   "footer": {
     "rights": "All rights reserved.",

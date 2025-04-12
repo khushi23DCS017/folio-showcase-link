@@ -1,8 +1,8 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { 
-  Code, Database, Globe, Layout, Palette, Server, 
-  Terminal, Layers, FileCode, Cpu
+  Code, Database, FileCode, Layout, BookOpen,
+  Palette, Server, Terminal, Users, Award
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -38,34 +38,29 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: t('skills.frontend.title'),
-      skills: t('skills.frontend.skills', { returnObjects: true }) as string[],
-      icon: <Layout size={28} />
-    },
-    {
-      title: t('skills.backend.title'),
-      skills: t('skills.backend.skills', { returnObjects: true }) as string[],
-      icon: <Server size={28} />
-    },
-    {
-      title: t('skills.database.title'),
-      skills: t('skills.database.skills', { returnObjects: true }) as string[],
-      icon: <Database size={28} />
-    },
-    {
-      title: t('skills.languages.title'),
-      skills: t('skills.languages.skills', { returnObjects: true }) as string[],
+      title: t('skills.programming.title'),
+      skills: t('skills.programming.skills', { returnObjects: true }) as string[],
       icon: <Code size={28} />
     },
     {
-      title: t('skills.design.title'),
-      skills: t('skills.design.skills', { returnObjects: true }) as string[],
-      icon: <Palette size={28} />
+      title: t('skills.tools.title'),
+      skills: t('skills.tools.skills', { returnObjects: true }) as string[],
+      icon: <Terminal size={28} />
     },
     {
-      title: t('skills.devops.title'),
-      skills: t('skills.devops.skills', { returnObjects: true }) as string[],
-      icon: <Terminal size={28} />
+      title: t('skills.webDev.title'),
+      skills: t('skills.webDev.skills', { returnObjects: true }) as string[],
+      icon: <Layout size={28} />
+    },
+    {
+      title: t('skills.softwareDev.title'),
+      skills: t('skills.softwareDev.skills', { returnObjects: true }) as string[],
+      icon: <FileCode size={28} />
+    },
+    {
+      title: t('skills.softSkills.title'),
+      skills: t('skills.softSkills.skills', { returnObjects: true }) as string[],
+      icon: <Users size={28} />
     },
   ];
   

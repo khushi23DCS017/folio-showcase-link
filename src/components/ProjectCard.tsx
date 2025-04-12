@@ -10,6 +10,7 @@ interface ProjectCardProps {
   demoLink: string;
   githubLink: string;
   technologies: string[];
+  techStack?: string;
   index: number;
 }
 
@@ -19,7 +20,8 @@ const ProjectCard = ({
   image, 
   demoLink, 
   githubLink, 
-  technologies, 
+  technologies,
+  techStack,
   index 
 }: ProjectCardProps) => {
   const isEven = index % 2 === 0;
@@ -45,6 +47,12 @@ const ProjectCard = ({
           <div>
             <h3 className="text-xl font-bold mb-3 text-gradient">{title}</h3>
             <p className="text-slate dark:text-lightSlate mb-4">{description}</p>
+            
+            {techStack && (
+              <div className="mb-3 text-navy dark:text-accent font-mono text-sm">
+                {techStack}
+              </div>
+            )}
             
             <div className="flex flex-wrap gap-2 mb-6">
               {technologies.map((tech) => (

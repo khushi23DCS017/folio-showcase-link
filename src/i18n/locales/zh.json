@@ -4,57 +4,82 @@
     "projects": "项目",
     "skills": "技能",
     "contact": "联系方式",
-    "getInTouch": "联系我"
+    "getInTouch": "联系我",
+    "education": "教育",
+    "certifications": "证书"
   },
   "hero": {
     "greeting": "你好，我是",
-    "name": "约翰·多伊",
-    "tagline": "我为网络构建产品。",
-    "description": "我是一名软件开发人员，专门打造卓越的数字体验。目前，我专注于创建无障碍、以人为本的产品。",
+    "name": "Khushi Dadhaniya",
+    "tagline": "计算机科学工程师",
+    "description": "有着编程和问题解决强大基础的计算机科学工程师。寻求机会运用我在网页开发、数据分析和机器学习方面的技能，并通过实习或项目获得实践经验。",
     "viewWork": "查看我的作品",
-    "getInTouch": "联系我"
+    "getInTouch": "联系我",
+    "location": "古吉拉特邦，苏拉特",
+    "semester": "计算机科学与工程，第四学期"
   },
   "projects": {
     "title": "项目",
-    "ecommerce": {
-      "title": "电子商务平台",
-      "description": "一个完全响应式的电子商务平台，具有产品目录、购物车、用户认证和支付处理集成。"
+    "eduRadar": {
+      "title": "EduRadar — 辅导老师查找平台",
+      "description": "一个教育科技项目，通过基于GPS的搜索、高级过滤器和应用内消息传递将学生与附近的辅导老师连接起来。主要功能：基于位置的搜索、学生/辅导老师资料、安全认证、实时聊天和辅导老师评价。",
+      "techStack": "React | Node.js | Firebase"
     },
-    "taskApp": {
-      "title": "任务管理应用",
-      "description": "一个看板风格的任务管理应用，具有拖放功能、任务分类和实时更新。"
-    },
-    "dashboard": {
-      "title": "社交媒体仪表板",
-      "description": "一个综合性的社交媒体分析仪表板，具有交互式图表、指标跟踪和报告生成功能。"
+    "inclusivePay": {
+      "title": "InclusivePay — 金融包容平台",
+      "description": "一个旨在通过提供预算工具、安全的数字支付和金融知识课程来支持银行服务不足社区的金融科技平台。它包括由AI提供的个性化金融建议和游戏化学习，以改善资金管理。该平台通过低成本交易和多语言支持确保可访问性。",
+      "techStack": "HTML | CSS | JavaScript | React"
     }
   },
   "skills": {
     "title": "技能",
-    "frontend": {
-      "title": "前端开发",
-      "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux"]
-    },
-    "backend": {
-      "title": "后端开发",
-      "skills": ["Node.js", "Express", "Django", "Ruby on Rails", "GraphQL"]
-    },
-    "database": {
-      "title": "数据库",
-      "skills": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"]
-    },
-    "languages": {
+    "programming": {
       "title": "编程语言",
-      "skills": ["JavaScript", "TypeScript", "Python", "Java", "C++"]
+      "skills": ["Python", "C++", "Java", "C", "JavaScript", "React", "Node.js", "Firebase"]
     },
-    "design": {
-      "title": "设计工具",
-      "skills": ["Figma", "Adobe XD", "Sketch", "Photoshop", "Illustrator"]
+    "tools": {
+      "title": "工具与技术",
+      "skills": ["Visual Studio", "SQL", "MS Excel"]
     },
-    "devops": {
-      "title": "DevOps 和工具",
-      "skills": ["Git", "Docker", "AWS", "CI/CD", "Jest"]
+    "webDev": {
+      "title": "网页开发",
+      "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js"]
+    },
+    "softwareDev": {
+      "title": "软件开发",
+      "skills": ["面向对象编程"]
+    },
+    "softSkills": {
+      "title": "软技能",
+      "skills": ["领导力", "问题解决", "管理", "沟通", "团队合作"]
     }
+  },
+  "education": {
+    "title": "教育",
+    "university": "CHARUSAT大学",
+    "degree": "计算机科学与工程",
+    "period": "2023年7月 - 2027年5月",
+    "gpa": "当前CGPA：9.20",
+    "courses": "相关课程：数据结构与算法、计算机网络、数据库管理系统、操作系统、算法设计与分析",
+    "school": {
+      "name": "Ashadeep学校集团",
+      "period": "2019年6月 - 2023年4月",
+      "achievements": "10年级：98.91百分位 | 12年级：87.79科学百分位"
+    }
+  },
+  "certifications": {
+    "title": "证书与成就",
+    "items": [
+      "Java编程，Nptel在线认证 — 2024",
+      "odoo黑客马拉松（M.S大学）（前50团队）— [2025年3月]",
+      "Red Hat Enterprise Linux 9基础",
+      "数据可视化：为业务提供有效洞察，TATA认证",
+      "Python基础，由Infosys认证"
+    ]
+  },
+  "extracurricular": {
+    "title": "课外活动",
+    "role": "学院级学生顾问(ILSC) - 现在"
   },
   "contact": {
     "title": "联系方式",
@@ -63,7 +88,9 @@
     "namePlaceholder": "您的姓名",
     "emailPlaceholder": "您的邮箱",
     "messagePlaceholder": "您的留言",
-    "send": "发送信息"
+    "send": "发送信息",
+    "email": "khushidadhaniya8@gmail.com",
+    "phone": "0786 100 83 97"
   },
   "footer": {
     "rights": "版权所有。",
