@@ -25,8 +25,10 @@ const ProjectCard = ({
   const isEven = index % 2 === 0;
   
   return (
-    <Card className={`overflow-hidden border-0 shadow-lg animate-fade-in rounded-lg`} 
-      style={{ animationDelay: `${0.2 + index * 0.1}s` }}>
+    <Card 
+      className={`overflow-hidden border-0 shadow-lg hover:shadow-xl animate-fade-in dark:bg-lightNavy/80 dark:text-white transition-all duration-300 rounded-lg hover-glow`} 
+      style={{ animationDelay: `${0.2 + index * 0.1}s` }}
+    >
       <div className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} h-full`}>
         {/* Project Image */}
         <div className="w-full md:w-1/2 relative group overflow-hidden">
@@ -39,14 +41,14 @@ const ProjectCard = ({
         </div>
         
         {/* Project Details */}
-        <CardContent className="flex flex-col justify-between w-full md:w-1/2 p-6 bg-white">
+        <CardContent className="flex flex-col justify-between w-full md:w-1/2 p-6 bg-white dark:bg-lightNavy/80">
           <div>
-            <h3 className="text-xl font-bold mb-3 text-navy">{title}</h3>
-            <p className="text-slate mb-4">{description}</p>
+            <h3 className="text-xl font-bold mb-3 text-navy dark:text-aqua">{title}</h3>
+            <p className="text-slate dark:text-lightSlate mb-4">{description}</p>
             
             <div className="flex flex-wrap gap-2 mb-6">
               {technologies.map((tech) => (
-                <Badge key={tech} className="bg-secondary text-navy hover:bg-secondary/80">
+                <Badge key={tech} className="bg-secondary text-navy dark:bg-navy/50 dark:text-lightSlate hover:bg-secondary/80 dark:hover:bg-navy/70 transition-colors">
                   {tech}
                 </Badge>
               ))}
@@ -58,7 +60,7 @@ const ProjectCard = ({
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-navy hover:text-aqua transition-colors"
+              className="text-navy dark:text-aqua hover:text-aqua dark:hover:text-white transition-colors transform hover:scale-110 duration-300"
               aria-label="GitHub Repository"
             >
               <Github size={20} />
@@ -67,7 +69,7 @@ const ProjectCard = ({
               href={demoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-navy hover:text-aqua transition-colors"
+              className="text-navy dark:text-aqua hover:text-aqua dark:hover:text-white transition-colors transform hover:scale-110 duration-300"
               aria-label="Live Demo"
             >
               <ExternalLink size={20} />

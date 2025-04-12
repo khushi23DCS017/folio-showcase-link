@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="py-8 bg-navy text-white">
+    <footer className="py-8 bg-navy dark:bg-lightNavy/80 text-white transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
@@ -17,7 +17,7 @@ const Footer = () => {
               href="https://github.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-lightSlate hover:text-aqua transition-colors"
+              className="text-lightSlate hover:text-aqua transition-colors transform hover:scale-110 duration-300"
               aria-label="GitHub"
             >
               <Github size={20} />
@@ -26,14 +26,14 @@ const Footer = () => {
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-lightSlate hover:text-aqua transition-colors"
+              className="text-lightSlate hover:text-aqua transition-colors transform hover:scale-110 duration-300"
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
             </a>
             <a 
               href="mailto:johndoe@example.com" 
-              className="text-lightSlate hover:text-aqua transition-colors"
+              className="text-lightSlate hover:text-aqua transition-colors transform hover:scale-110 duration-300"
               aria-label="Email"
             >
               <Mail size={20} />
