@@ -1,5 +1,6 @@
+
 import { useState } from 'react';
-import { MailIcon, MapPinIcon } from 'lucide-react';
+import { MailIcon, MapPinIcon, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -159,7 +160,7 @@ const Contact = () => {
                 ) : (
                   <>
                     Send Message
-                    <SendIcon className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                    <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
                   </>
                 )}
               </Button>
